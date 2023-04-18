@@ -1,0 +1,22 @@
+[package]
+name = "proxy_rotator"
+version = "0.1.0"
+edition = "2021"
+
+[[bin]]
+name = "proxy_rotator"
+path = "src/main.rs"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+[lib]
+name = "proxy_rotator"
+path = "src/lib.rs"
+
+[dependencies]
+tokio = { version = "1", features = ["full"] }
+rand = "0.8.5"
+bstr = "1.4.0"
+clap = { version = "4.1.4", features = ["derive", "env"] }
+async-trait = "0.1.64"
+env_logger = "0.10.0"
+log = "0.4"
